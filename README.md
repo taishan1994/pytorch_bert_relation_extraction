@@ -1,0 +1,2 @@
+# pytorch_bert_relation_extraction
+基于pytorch+bert的中文关系抽取
