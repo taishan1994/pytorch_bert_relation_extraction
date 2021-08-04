@@ -29,16 +29,17 @@ model_hub/bert-base-chinese/
 # 其他细节
 1、由于bert会在句子前面添加一个[cls],因此在实际使用时，#和$的位置都要+1。<br>
 2、会有爱德华、爱德华六世这种一种实体是另一种的一部分的情况，在预处理的时候要特殊处理，避免将爱德华六世变为#爱德华#六世，具体可以参考preprocess.py。<br>
-3、在models.py中使用index_select获取#和$所对应的表示，并使用torch.cat进行拼接。
+3、在models.py中使用index_select获取#和$所对应的表示，并使用torch.cat进行拼接。<br>
+4、我们选择长度小于等于128的句子。
 
 # 运行代码
 ```python
 python main.py \
 --bert_dir="../model_hub/bert-base-chinese/" \
---data_dir="./data/final_data/" \
+--data_dir="./data/" \
 --log_dir="./logs/" \
 --output_dir="./checkpoints/" \
---num_tags=65 \
+--num_tags=14 \
 --seed=123 \
 --gpu_ids="0" \
 --max_seq_len=128 \
