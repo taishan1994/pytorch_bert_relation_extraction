@@ -105,3 +105,8 @@ weighted avg       0.85      0.85      0.85       752
 2021-08-04 15:56:33,811 - INFO - main.py - <module> - 251 - ==========================
 ```
 
+# 参考
+数据集来源：https://www.cnblogs.com/jclian91/p/12328570.html<br>
+思路参考keras代码：https://github.com/shifop/people_relation_extract/blob/main/model.py
+
+
