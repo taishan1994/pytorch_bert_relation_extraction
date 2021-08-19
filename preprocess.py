@@ -73,8 +73,8 @@ def convert_bert_example(ex_idx, example: InputExample, tokenizer: BertTokenizer
     # label_ids = label2id[labels]
     # 因为第一位是CLS，因此实体的索引都要+1
     ids = [x+1 for x in ids]
-
-    encode_dict = tokenizer.encode_plus(text=raw_text,
+    tokens = [i for i in raw_text]
+    encode_dict = tokenizer.encode_plus(text=tokenss,
                                         add_special_tokens=True,
                                         max_length=max_seq_len,
                                         truncation='longest_first',
