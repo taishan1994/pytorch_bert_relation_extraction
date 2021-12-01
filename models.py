@@ -83,7 +83,7 @@ if __name__ == '__main__':
                               sampler=train_sampler,
                               num_workers=2)
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    model = BertForRelationExtraction(args, device)
+    model = BertForRelationExtraction(args)
     model.to(device)
     model.train()
     for step, train_data in enumerate(train_loader):
