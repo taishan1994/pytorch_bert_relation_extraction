@@ -20,7 +20,7 @@
 --main.py：主运行程序，包含训练、验证、测试、预测以及相关评价指标的计算<br>
 要预先下载好预训练的bert模型，放在和该项目同级下的model_hub文件夹下，即：<br>
 model_hub/bert-base-chinese/
-相关下载地址：<a href="https://huggingface.co/bert-base-cased/tree/main">bert-base-cased</a><br>
+相关下载地址：<a href="https://huggingface.co/bert-base-chinese/">bert-base-chinese</a><br>
 需要的是vocab.txt、config.json、pytorch_model.bin<br>
 你也可以使用我已经训练好的模型，将其放在checkpoints下：<br>
 链接：https://pan.baidu.com/s/11a-GwesO8uQMmXSYLf4FHA <br>
